@@ -17,7 +17,8 @@
       <pubDate>Tue, 17 Apr 2018 16:18:38 -0500</pubDate>
       
       <guid>https://floatgreen.github.io/post/new_blog_post_name/</guid>
-      <description>try to use the append genration of site</description>
+      <description> test aa
+aa </description>
     </item>
     
     <item>
@@ -36,15 +37,6 @@
       
       <guid>https://floatgreen.github.io/post/first/</guid>
       <description> Hello Hugo  aaa bbb ccc  </description>
-    </item>
-    
-    <item>
-      <title>2ed</title>
-      <link>https://floatgreen.github.io/post/2nd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://floatgreen.github.io/post/2nd/</guid>
-      <description> Hello Hugo  aaa bbb  </description>
     </item>
     
   </channel>
