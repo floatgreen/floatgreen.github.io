@@ -10,14 +10,5 @@
 	<atom:link href="https://floatgreen.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title></title>
-      <link>https://floatgreen.github.io/post/second/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://floatgreen.github.io/post/second/</guid>
-      <description> second hi  aa  ssh  </description>
-    </item>
-    
   </channel>
 </rss>
