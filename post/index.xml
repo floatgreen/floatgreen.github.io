@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on My Small Hugo Site</title>
     <link>https://floatgreen.github.io/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on My Small Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Apr 2018 16:18:38 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 17 Apr 2018 16:40:31 -0500</lastBuildDate>
     
 	<atom:link href="https://floatgreen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>New_blog_post_name</title>
-      <link>https://floatgreen.github.io/post/new_blog_post_name/</link>
-      <pubDate>Tue, 17 Apr 2018 16:18:38 -0500</pubDate>
+      <title>Simple_setting_git</title>
+      <link>https://floatgreen.github.io/post/simple_setting_git/</link>
+      <pubDate>Tue, 17 Apr 2018 16:40:31 -0500</pubDate>
       
-      <guid>https://floatgreen.github.io/post/new_blog_post_name/</guid>
-      <description> test aa
-aa </description>
+      <guid>https://floatgreen.github.io/post/simple_setting_git/</guid>
+      <description>Configuring Git in a new computer
+git config --global user.name &amp;quot;usrname&amp;quot; git config --global user.email &amp;quot;YOUR EMAIL ADDRESS&amp;quot; git config --global push.default simple  remember to use the same email as in github, so that the github main page will record your activities.</description>
     </item>
     
     <item>
@@ -28,15 +28,6 @@ aa </description>
       
       <guid>https://floatgreen.github.io/post/new/</guid>
       <description> try some code #include &amp;lt;stdio.h&amp;gt; int main(void) { printf(&amp;quot;hello, aa!\n&amp;quot;); return 0; }  </description>
-    </item>
-    
-    <item>
-      <title>First</title>
-      <link>https://floatgreen.github.io/post/first/</link>
-      <pubDate>Mon, 16 Apr 2018 16:10:26 -0500</pubDate>
-      
-      <guid>https://floatgreen.github.io/post/first/</guid>
-      <description> Hello Hugo  aaa bbb ccc  </description>
     </item>
     
   </channel>
