@@ -3,12 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://floatgreen.github.io/post/second/</loc>
+  </url>
+  
+  <url>
     <loc>https://floatgreen.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://floatgreen.github.io/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://floatgreen.github.io/post/</loc>
     <priority>0</priority>
   </url>
   
