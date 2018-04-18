@@ -1,174 +1,97 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html>
 <head>
-    <title>Simple_setting_git</title>
-    <meta name="generator" content="Hugo 0.39" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
-    
+    <base href="/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="author" content="">
 
-    <script src="https://floatgreen.github.io/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="https://floatgreen.github.io/bower_components/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://floatgreen.github.io/bower_components/bootstrap/js/dropdowns-enhancement.js"></script>
-    <script src="https://floatgreen.github.io/bower_components/bluebird/js/browser/bluebird.js"></script>
-    <script src="https://floatgreen.github.io//bower_components/talaria/dist/talaria.js"></script>
-    <script src="https://floatgreen.github.io/bower_components/d3/d3.min.js" charset="utf-8"></script>
-    <script src="https://floatgreen.github.io/bower_components/cal-heatmap/cal-heatmap.min.js"></script>
-    <script src="https://floatgreen.github.io/bower_components/highlightjs/highlight.pack.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']]}
-      });
-    </script>
+<meta name="description" content="">
 
-    <link rel="icon" href="https://floatgreen.github.io/favicon.ico" />
-    <link rel="apple-touch-icon" href="https://floatgreen.github.io/apple-touch-icon.png" />
-    <link rel="stylesheet" href="https://floatgreen.github.io/bower_components/highlightjs/styles/monokai.css" />
-    <link rel="stylesheet" href="https://floatgreen.github.io/bower_components/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://floatgreen.github.io/bower_components/bootstrap/css/dropdowns-enhancement.css" />
-    <link rel="stylesheet" href="https://floatgreen.github.io/bower_components/talaria/dist/talaria.css" />   
-    <link rel="stylesheet" href="https://floatgreen.github.io/bower_components/createjs/createjs.css" />
-    <link rel="stylesheet" href="https://floatgreen.github.io/bower_components/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://floatgreen.github.io/bower_components/icomoon/css/icomoon.css" />
-    <link rel="stylesheet" href="https://floatgreen.github.io/css/style.css" />
-    <link rel="stylesheet" href="https://floatgreen.github.io/css/mobile.css" />
-    <link rel="stylesheet" href="https://floatgreen.github.io/bower_components/cal-heatmap/cal-heatmap.css" />
+<title>Simple_setting_git</title>
+<meta name="generator" content="Hugo 0.39" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-    
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+<link  href="https://floatgreen.github.io//css/theme.min.css" rel="stylesheet" type="text/css">
 
-    
 </head>
 <body>
-<div class="container">
-
-
-
-<header id="header">
-  <div id="header-main" class="header-inner">
-    <div class="outer">
-
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-
-    	    <div class="navbar-header">
-      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-      		  <span class="sr-only">Toggle navigation</span>
-      		  <span class="icon-bar"></span>
-      		  <span class="icon-bar"></span>
-      		  <span class="icon-bar"></span>
-      		</button>
-		    <h1>
-			    <a class="navbar-brand" href="https://floatgreen.github.io/">
-				    <span class="icon-phoenix_logo"></span>
-				    
-				    
-				    
-			    </a>
-		    </h1>
-	    </div>
-
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-    
-        <li><a href="#">Home</a></li>
-        <li><a href="/hugo-theme-wave/archive">Archives</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wiki<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">User</a></li>
-            <li role="separator" class="divider"></li>
-            <li class="dropdown-submenu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">List Application</a></li>
-                    <li role="separator" class="divider"></li>
-              <li><a href="#">Accessibility</a></li>
-              <li><a href="#">Application launchers</a></li>
-              <li class="dropdown-submenu">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Command shells</a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-submenu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bash</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Invocation</a></li>
-                  <li><a href="#">Command line</a></li>
-                </ul>
-                </li>
-              </ul>
-              </li>
-            </ul>
-            </li>
-            <li><a href="#">Development</a></li>
-            <li><a href="#">Hardware</a></li>
-            <li><a href="#">Networking</a></li>
-            <li><a href="#">System administration</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">GitHub</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Issue</a></li>
-
-    <li>
-	<a href="https://gitlab.com/">
-		<i class="fa fa-gitlab" aria-hidden="true"></i>
-	</a>
-</li>
-<li>
-	<a href="https://github.com/">
-		<i class="fa fa-github" aria-hidden="true"></i>
-	</a>
-</li>
-<li>
-	<a href="https://twitter.com/">
-		<i class="fa fa-twitter" aria-hidden="true"></i>
-	</a>
-
-</li>
-
-<li>
-	<a href="">
-		 <i class="fa fa-rss-square" aria-hidden="true"></i>
-	</a>
-</li>
-
-    
-      </ul>
+<div class="page-container container-fluid">
+<div class="col-md-3 menu">
+    <nav class="col-md-3">
+    <h3 class="home-link"><a href="https://floatgreen.github.io/">Root</a></h3>
+    <div id="last-posts" class="open">
+        <h3 data-open="last-posts">My Small Hugo Site - Most recent posts</h3>
+        <ul>
+            
+            <li><a href="https://floatgreen.github.io/post/build_my_hugo_site/">Build_my_hugo_site</a></li>
+            
+            <li><a href="https://floatgreen.github.io/post/simple_setting_git/">Simple_setting_git</a></li>
+            
+            <li><a href="https://floatgreen.github.io/post/new/">New</a></li>
+            
+            <li><a href="https://floatgreen.github.io/about/">About</a></li>
+            
+        </ul>
     </div>
 
-  </div>
+    
+    <div id="tags" class="open">
+        <h3 data-open="tags">Tags</h3>
+        <ul class="tags">
+            
+            <li><a href="/tags/git">git</a></li>
+            
+            <li><a href="/tags/hugo">hugo</a></li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div id="categories" class="open">
+        <h3 data-open="categories">Categories</h3>
+        <ul class="categories">
+            
+            <li><a href="/categories/develop">develop</a></li>
+            
+        </ul>
+    </div>
+    
 </nav>
 
-</header>
+</div>
+<div class="col-md-9 content">
 
+<h1>Simple_setting_git</h1>
+<h4>Published 04-17-2018 16:40:31</h4>
 
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="kendo5731"></a>
+<script>!function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');</script>
 
+<div class="fb-share-button" data-href="https://floatgreen.github.io/post/simple_setting_git/" data-layout="button"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en-US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-<div id="container">
-   <div class="outer">
-    <section id="main">
-    <article>
-        <div class="article-inner">
-            
-
-            <header class="article-header">
-    
-    <h1 class="article-title" itemprop="name">
-	<a href="https://floatgreen.github.io/post/simple_setting_git/" class="permalink">Simple_setting_git</a>
-    </h1>
-	<time datetime="2018-04-17 16:40:31 -0500 CDT" itemprop="datePublished">2018-04-17</time>
-    <div class="article-meta">
-
-        
-    </div>
-</header>
-
-
-            <div class="article-entry" itemprop="articleBody">
-                <p>Configuring Git in a new computer</p>
+<article>
+    <p>Configuring Git in a new computer</p>
 
 <pre><code>git config --global user.name &quot;usrname&quot;
 git config --global user.email &quot;YOUR EMAIL ADDRESS&quot;
@@ -178,43 +101,9 @@ git config --global push.default simple
 
 <p>remember to use the same email as in github, so that the github main page will record your activities.</p>
 
-            </div>
+</article>
 
-            <div class="tweet-footer">
-<a href="http://twitter.com/share?url=https%3a%2f%2ffloatgreen.github.io%2fpost%2fsimple_setting_git%2f&text=Simple_setting_git" target="_blank" title="Twitter" >
-<span class="tweet-botton">
-    	<i class="fa fa-twitter" aria-hidden="true"></i>
-    	   Compose new Tweet 
-    </span>
-    </a>
-</div>
-
-<footer class="article-footer">
-
-    
-    
-
-    <a href="https://floatgreen.github.io/post/simple_setting_git//#disqus_thread" class="article-comment-link">
-        
-    </a>
-    
-</footer>
-
-        </div>
-
-        
-
-
-  <script type="text/javascript">
-   talaria.init({REPOSITORY_NAME: 'syui.gitlab.io-comment',
-                 GITHUB_USERNAME: 'mba-hack'});
-  </script>
-    </article>
-
-    <section id="comments">
-
-        <div id="disqus_thread">
-            <div id="disqus_thread"></div>
+<div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
     
@@ -234,44 +123,12 @@ git config --global push.default simple
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </div>
-    </section>
-</section>
-
-    <aside id="sidebar">
-    <div class="widget-wrap">
-<input id="search" type="text" placeholder="search">
-<ul id="results">
-</ul>
-<script type="text/javascript" src="https://floatgreen.github.io/js/search.js"></script>
-<script type="text/javascript" src="https://floatgreen.github.io/bower_components/lunr.js/lunr.min.js"></script>
-</div>
-
-    
-
-
-    
-
-    
-
-    
-</aside>
 
 </div>
 </div>
+<script src="https://floatgreen.github.io//js/theme.min.js" type="text/javascript"></script>
 
-<footer id="footer">
-  <div class="outer">
-    <div id="footer-info" class="inner">
-	<footer id="footer-left">
-	    &copy; 2018 <a href="https://github.com/syui">syui</a>. <br>
-	    
-	</footer>
-	    <footer id="footer-center"> <a href="#"><span class="icon-phoenix_logo"></span></a>  </footer>
-	   <footer id="footer-right"> <a href="">Reference</a> <a href="">Keybind</a> <a href="">Command</a> <a href="">API</a>  </footer>
-    </div>
-  </div>
-</footer>
 
 </body>
 </html>
+
