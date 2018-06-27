@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://floatgreen.github.io/post/xargs/</loc>
+    <lastmod>2018-06-27T16:26:28-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://floatgreen.github.io/post/image_convertion/</loc>
     <lastmod>2018-06-27T15:13:36-05:00</lastmod>
   </url>
@@ -33,13 +38,19 @@
   </url>
   
   <url>
+    <loc>https://floatgreen.github.io/tags/bash/</loc>
+    <lastmod>2018-06-27T16:26:28-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://floatgreen.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://floatgreen.github.io/categories/develop/</loc>
-    <lastmod>2018-04-17T17:00:44-05:00</lastmod>
+    <lastmod>2018-06-27T16:26:28-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -57,13 +68,13 @@
   
   <url>
     <loc>https://floatgreen.github.io/</loc>
-    <lastmod>2018-06-27T15:13:36-05:00</lastmod>
+    <lastmod>2018-06-27T16:26:28-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://floatgreen.github.io/post/</loc>
-    <lastmod>2018-06-27T15:13:36-05:00</lastmod>
+    <lastmod>2018-06-27T16:26:28-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -81,7 +92,7 @@
   
   <url>
     <loc>https://floatgreen.github.io/tags/</loc>
-    <lastmod>2018-04-17T16:40:31-05:00</lastmod>
+    <lastmod>2018-06-27T16:26:28-05:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,19 @@
     <description>Recent content in Tags on My Small Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Apr 2018 16:40:31 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 27 Jun 2018 16:26:28 -0500</lastBuildDate>
     
 	<atom:link href="https://floatgreen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bash</title>
+      <link>https://floatgreen.github.io/tags/bash/</link>
+      <pubDate>Wed, 27 Jun 2018 16:26:28 -0500</pubDate>
+      
+      <guid>https://floatgreen.github.io/tags/bash/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Git</title>

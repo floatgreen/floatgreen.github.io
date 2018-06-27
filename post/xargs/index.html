@@ -8,7 +8,7 @@
 
 <meta name="description" content="">
 
-<title>Categories</title>
+<title>xargs</title>
 <meta name="generator" content="Hugo 0.39" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
@@ -78,21 +78,61 @@
 </div>
 <div class="col-md-9 content">
 
+<h1>xargs</h1>
+<h4>Published 06-27-2018 16:26:28</h4>
 
-<div class="articles-list">
-    
-    <article>
-        <h3><a href="https://floatgreen.github.io/categories/develop/">Develop</a> - 2018-06-27 16:26:28</h3>
-        
-    </article>
-    
-    <article>
-        <h3><a href="https://floatgreen.github.io/categories/reports/">Reports</a> - 2018-06-27 15:13:36</h3>
-        
-    </article>
-    
-</div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="kendo5731"></a>
+<script>!function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');</script>
 
+<div class="fb-share-button" data-href="https://floatgreen.github.io/post/xargs/" data-layout="button"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en-US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<article>
+    <ul>
+<li>copy all the .png file ( find in . recursively) to testdir:</li>
+</ul>
+
+<pre><code>find . -name &quot;*.png&quot; | xargs -n1 -i cp {} testdir
+
+</code></pre>
+
+</article>
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "floatgreen" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 </div>
 </div>

@@ -27,6 +27,8 @@
         <h3 data-open="last-posts">My Small Hugo Site - Most recent posts</h3>
         <ul>
             
+            <li><a href="https://floatgreen.github.io/post/xargs/">xargs</a></li>
+            
             <li><a href="https://floatgreen.github.io/post/image_convertion/">Image_convertion</a></li>
             
             <li><a href="https://floatgreen.github.io/post/web_tools_1/">Web_tools_1</a></li>
@@ -46,6 +48,8 @@
     <div id="tags" class="open">
         <h3 data-open="tags">Tags</h3>
         <ul class="tags">
+            
+            <li><a href="/tags/bash">bash</a></li>
             
             <li><a href="/tags/git">git</a></li>
             
@@ -86,6 +90,11 @@ git config --global user.name &quot;usrname&quot; git config --global user.email
     <article>
         <h3><a href="https://floatgreen.github.io/post/build_my_hugo_site/">Build_my_hugo_site</a> - 2018-04-17 17:00:44</h3>
         Record the steps of building a hugo site ( 2018-04) get the hugo binary and mv it in some where in PATH # https://github.com/gohugoio/hugo/releases wget https://github.com/gohugoio/hugo/releases/download/v0.39/hugo_0.39_Linux-64bit.tar.gz  build a site hugo new Mysite  take a look at the directory  ▸ archetypes/ ▸ content/ ▸ layouts/ ▸ static/ config.toml  make a post hugo new about.md # about.md is generated in content/about.md hugo new post/first.md # first.md is in content/post/first.
+    </article>
+    
+    <article>
+        <h3><a href="https://floatgreen.github.io/post/xargs/">xargs</a> - 2018-06-27 16:26:28</h3>
+         copy all the .png file ( find in . recursively) to testdir:  find . -name &quot;*.png&quot; | xargs -n1 -i cp {} testdir  
     </article>
     
 </div>
