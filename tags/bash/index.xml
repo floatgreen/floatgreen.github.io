@@ -17,7 +17,7 @@
       <pubDate>Wed, 27 Jun 2018 16:26:28 -0500</pubDate>
       
       <guid>https://floatgreen.github.io/post/xargs/</guid>
-      <description> copy all the .png file ( find in . recursively) to testdir:  find . -name &amp;quot;*.png&amp;quot; | xargs -n1 -i cp {} testdir  </description>
+      <description>copy all the .png file ( find in . recursively) to testdir:  find . -name &amp;quot;*.png&amp;quot; | xargs -n1 -i cp {} testdir  https://linux.101hacks.com/linux-commands/xargs-command-examples/</description>
     </item>
     
   </channel>
