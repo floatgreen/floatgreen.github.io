@@ -6,10 +6,27 @@
     <description>Recent content on My Small Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jun 2018 09:25:44 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 27 Jun 2018 15:13:36 -0500</lastBuildDate>
     
 	<atom:link href="https://floatgreen.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Image_converting</title>
+      <link>https://floatgreen.github.io/post/image_converting/</link>
+      <pubDate>Wed, 27 Jun 2018 15:13:36 -0500</pubDate>
+      
+      <guid>https://floatgreen.github.io/post/image_converting/</guid>
+      <description>install :
+https://www.imagemagick.org/script/index.php
+1) covert format:
+convert -units PixelsPerInch -density 600 SimPlot.wmf image.png  2) white background to transparent (be cautious)
+convert -density 600 -transparent white SimPlot.wmf trans_bg.png  3)transparent background to white
+convert -background white -alpha remove trans_bg.png white_bg.png  install :
+inkscape
+1) pdf to svg
+inkscape -l out.svg in.pdf  </description>
+    </item>
     
     <item>
       <title>Web_tools_1</title>

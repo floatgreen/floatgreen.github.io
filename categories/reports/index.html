@@ -27,6 +27,8 @@
         <h3 data-open="last-posts">My Small Hugo Site - Most recent posts</h3>
         <ul>
             
+            <li><a href="https://floatgreen.github.io/post/image_converting/">Image_converting</a></li>
+            
             <li><a href="https://floatgreen.github.io/post/web_tools_1/">Web_tools_1</a></li>
             
             <li><a href="https://floatgreen.github.io/post/build_my_hugo_site/">Build_my_hugo_site</a></li>
@@ -82,6 +84,19 @@
  hot to get BibTex of a paper &gt; gogle scholar &gt; setting &ndash;&gt; Bibliography manager &ndash;&gt; show links to import citation into BibTex
  table generater in R
   https://haozhu233.github.io/kableExtra/awesome_table_in_html.html
+    </article>
+    
+    <article>
+        <h3><a href="https://floatgreen.github.io/post/image_converting/">Image_converting</a> - 2018-06-27 15:13:36</h3>
+        install :
+https://www.imagemagick.org/script/index.php
+1) covert format:
+convert -units PixelsPerInch -density 600 SimPlot.wmf image.png  2) white background to transparent (be cautious)
+convert -density 600 -transparent white SimPlot.wmf trans_bg.png  3)transparent background to white
+convert -background white -alpha remove trans_bg.png white_bg.png  install :
+inkscape
+1) pdf to svg
+inkscape -l out.svg in.pdf  
     </article>
     
 </div>
