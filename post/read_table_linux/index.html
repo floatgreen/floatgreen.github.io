@@ -8,7 +8,7 @@
 
 <meta name="description" content="">
 
-<title>Develop</title>
+<title>read_table_linux</title>
 <meta name="generator" content="Hugo 0.39" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
@@ -82,33 +82,64 @@
 </div>
 <div class="col-md-9 content">
 
+<h1>read_table_linux</h1>
+<h4>Published 07-30-2018 10:32:18</h4>
 
-<div class="articles-list">
-    
-    <article>
-        <h3><a href="https://floatgreen.github.io/post/simple_setting_git/">Simple_setting_git</a> - 2018-04-17 16:40:31</h3>
-        Configuring Git in a new computer
-git config --global user.name &quot;usrname&quot; git config --global user.email &quot;YOUR EMAIL ADDRESS&quot; git config --global push.default simple  remember to use the same email as in github, so that the github main page will record your activities.
-    </article>
-    
-    <article>
-        <h3><a href="https://floatgreen.github.io/post/build_my_hugo_site/">Build_my_hugo_site</a> - 2018-04-17 17:00:44</h3>
-        Record the steps of building a hugo site ( 2018-04) get the hugo binary and mv it in some where in PATH # https://github.com/gohugoio/hugo/releases wget https://github.com/gohugoio/hugo/releases/download/v0.39/hugo_0.39_Linux-64bit.tar.gz  build a site hugo new Mysite  take a look at the directory  ▸ archetypes/ ▸ content/ ▸ layouts/ ▸ static/ config.toml  make a post hugo new about.md # about.md is generated in content/about.md hugo new post/first.md # first.md is in content/post/first.
-    </article>
-    
-    <article>
-        <h3><a href="https://floatgreen.github.io/post/xargs/">xargs</a> - 2018-06-27 16:26:28</h3>
-        copy all the .png file ( find in . recursively) to testdir:  find . -name &quot;*.png&quot; | xargs -n1 -i cp {} testdir  find . -name &quot;*.txt&quot; | xargs -I % cp % testdir  https://linux.101hacks.com/linux-commands/xargs-command-examples/
-    </article>
-    
-    <article>
-        <h3><a href="https://floatgreen.github.io/post/read_table_linux/">read_table_linux</a> - 2018-07-30 10:32:18</h3>
-        note that the '\t' should start with a $
-while IFS=$'\t' read -r gene old_locus	new_locus contig start end strand do efetch -db=nuccore -format=fasta -id=$contig -seq_start=$start -seq_stop=$end -strand=$strand &gt; &quot;$gene&quot;__&quot;$new_locus&quot;.fasta done &lt; VF_table  
-    </article>
-    
-</div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="kendo5731"></a>
+<script>!function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');</script>
 
+<div class="fb-share-button" data-href="https://floatgreen.github.io/post/read_table_linux/" data-layout="button"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en-US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<article>
+    <p>note that the <code>'\t'</code> should start with a <code>$</code></p>
+
+<pre><code>while IFS=$'\t' read -r  gene old_locus	new_locus contig start end strand
+
+do
+  
+  efetch -db=nuccore -format=fasta -id=$contig -seq_start=$start -seq_stop=$end  -strand=$strand  &gt; &quot;$gene&quot;__&quot;$new_locus&quot;.fasta 
+
+done &lt; VF_table
+</code></pre>
+
+</article>
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "floatgreen" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 </div>
 </div>

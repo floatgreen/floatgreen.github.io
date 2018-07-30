@@ -27,6 +27,8 @@
         <h3 data-open="last-posts">My Small Hugo Site - Most recent posts</h3>
         <ul>
             
+            <li><a href="https://floatgreen.github.io/post/read_table_linux/">read_table_linux</a></li>
+            
             <li><a href="https://floatgreen.github.io/post/xargs/">xargs</a></li>
             
             <li><a href="https://floatgreen.github.io/post/image_convertion/">Image_convertion</a></li>
@@ -50,6 +52,8 @@
         <ul class="tags">
             
             <li><a href="/tags/bash">bash</a></li>
+            
+            <li><a href="/tags/bioinfo">bioinfo</a></li>
             
             <li><a href="/tags/git">git</a></li>
             
@@ -126,7 +130,13 @@ inkscape -l out.svg in.pdf
     
     <article>
         <h3><a href="https://floatgreen.github.io/post/xargs/">xargs</a> - 2018-06-27 16:26:28</h3>
-        copy all the .png file ( find in . recursively) to testdir:  find . -name &quot;*.png&quot; | xargs -n1 -i cp {} testdir  https://linux.101hacks.com/linux-commands/xargs-command-examples/
+        copy all the .png file ( find in . recursively) to testdir:  find . -name &quot;*.png&quot; | xargs -n1 -i cp {} testdir  find . -name &quot;*.txt&quot; | xargs -I % cp % testdir  https://linux.101hacks.com/linux-commands/xargs-command-examples/
+    </article>
+    
+    <article>
+        <h3><a href="https://floatgreen.github.io/post/read_table_linux/">read_table_linux</a> - 2018-07-30 10:32:18</h3>
+        note that the '\t' should start with a $
+while IFS=$'\t' read -r gene old_locus	new_locus contig start end strand do efetch -db=nuccore -format=fasta -id=$contig -seq_start=$start -seq_stop=$end -strand=$strand &gt; &quot;$gene&quot;__&quot;$new_locus&quot;.fasta done &lt; VF_table  
     </article>
     
 </div>

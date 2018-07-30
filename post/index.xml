@@ -6,10 +6,20 @@
     <description>Recent content in Posts on My Small Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jun 2018 16:26:28 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 30 Jul 2018 10:32:18 -0500</lastBuildDate>
     
 	<atom:link href="https://floatgreen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>read_table_linux</title>
+      <link>https://floatgreen.github.io/post/read_table_linux/</link>
+      <pubDate>Mon, 30 Jul 2018 10:32:18 -0500</pubDate>
+      
+      <guid>https://floatgreen.github.io/post/read_table_linux/</guid>
+      <description>note that the &#39;\t&#39; should start with a $
+while IFS=$&#39;\t&#39; read -r gene old_locus	new_locus contig start end strand do efetch -db=nuccore -format=fasta -id=$contig -seq_start=$start -seq_stop=$end -strand=$strand &amp;gt; &amp;quot;$gene&amp;quot;__&amp;quot;$new_locus&amp;quot;.fasta done &amp;lt; VF_table  </description>
+    </item>
     
     <item>
       <title>xargs</title>
@@ -17,7 +27,7 @@
       <pubDate>Wed, 27 Jun 2018 16:26:28 -0500</pubDate>
       
       <guid>https://floatgreen.github.io/post/xargs/</guid>
-      <description>copy all the .png file ( find in . recursively) to testdir:  find . -name &amp;quot;*.png&amp;quot; | xargs -n1 -i cp {} testdir  https://linux.101hacks.com/linux-commands/xargs-command-examples/</description>
+      <description>copy all the .png file ( find in . recursively) to testdir:  find . -name &amp;quot;*.png&amp;quot; | xargs -n1 -i cp {} testdir  find . -name &amp;quot;*.txt&amp;quot; | xargs -I % cp % testdir  https://linux.101hacks.com/linux-commands/xargs-command-examples/</description>
     </item>
     
     <item>
