@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Develop on My Small Hugo Site</title>
+    <link>https://floatgreen.github.io/tags/develop/</link>
+    <description>Recent content in Develop on My Small Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Aug 2018 14:49:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://floatgreen.github.io/tags/develop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Perl_mv_rename_file</title>
+      <link>https://floatgreen.github.io/post/perl_mv_rename_file/</link>
+      <pubDate>Mon, 13 Aug 2018 14:49:00 -0500</pubDate>
+      
+      <guid>https://floatgreen.github.io/post/perl_mv_rename_file/</guid>
+      <description>#!/usr/bin/perl use warnings; use strict ; use File::Copy; .... move(&amp;quot;rename_&amp;quot;.$ARGV[0], $ARGV[0]); move($original_file, $new_file) or die &amp;quot;The move operation failed: $!&amp;quot;; copy($original_file, $new_file); copy($original_file, $new_file) or die &amp;quot;The copy operation failed: $!&amp;quot;;  </description>
+    </item>
+    
+  </channel>
+</rss>

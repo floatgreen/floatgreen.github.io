@@ -27,6 +27,8 @@
         <h3 data-open="last-posts">My Small Hugo Site - Most recent posts</h3>
         <ul>
             
+            <li><a href="https://floatgreen.github.io/post/perl_mv_rename_file/">Perl_mv_rename_file</a></li>
+            
             <li><a href="https://floatgreen.github.io/post/read_table_linux/">read_table_linux</a></li>
             
             <li><a href="https://floatgreen.github.io/post/xargs/">xargs</a></li>
@@ -54,6 +56,8 @@
             <li><a href="/tags/bash">bash</a></li>
             
             <li><a href="/tags/bioinfo">bioinfo</a></li>
+            
+            <li><a href="/tags/develop">develop</a></li>
             
             <li><a href="/tags/git">git</a></li>
             
@@ -137,6 +141,11 @@ inkscape -l out.svg in.pdf
         <h3><a href="https://floatgreen.github.io/post/read_table_linux/">read_table_linux</a> - 2018-07-30 10:32:18</h3>
         note that the '\t' should start with a $
 while IFS=$'\t' read -r gene old_locus	new_locus contig start end strand do efetch -db=nuccore -format=fasta -id=$contig -seq_start=$start -seq_stop=$end -strand=$strand &gt; &quot;$gene&quot;__&quot;$new_locus&quot;.fasta done &lt; VF_table  
+    </article>
+    
+    <article>
+        <h3><a href="https://floatgreen.github.io/post/perl_mv_rename_file/">Perl_mv_rename_file</a> - 2018-08-13 14:49:00</h3>
+        #!/usr/bin/perl use warnings; use strict ; use File::Copy; .... move(&quot;rename_&quot;.$ARGV[0], $ARGV[0]); move($original_file, $new_file) or die &quot;The move operation failed: $!&quot;; copy($original_file, $new_file); copy($original_file, $new_file) or die &quot;The copy operation failed: $!&quot;;  
     </article>
     
 </div>

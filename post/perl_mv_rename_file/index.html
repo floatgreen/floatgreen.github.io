@@ -8,7 +8,7 @@
 
 <meta name="description" content="">
 
-<title>Web_tools_1</title>
+<title>Perl_mv_rename_file</title>
 <meta name="generator" content="Hugo 0.39" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
@@ -86,8 +86,8 @@
 </div>
 <div class="col-md-9 content">
 
-<h1>Web_tools_1</h1>
-<h4>Published 06-27-2018 09:25:44</h4>
+<h1>Perl_mv_rename_file</h1>
+<h4>Published 08-13-2018 14:49:00</h4>
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="kendo5731"></a>
 <script>!function (d, s, id) {
@@ -100,7 +100,7 @@
     }
 }(document, 'script', 'twitter-wjs');</script>
 
-<div class="fb-share-button" data-href="https://floatgreen.github.io/post/web_tools_1/" data-layout="button"></div>
+<div class="fb-share-button" data-href="https://floatgreen.github.io/post/perl_mv_rename_file/" data-layout="button"></div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -111,29 +111,19 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <article>
-    <ul>
-<li>convert pdf to svg</li>
-</ul>
+    <pre><code>#!/usr/bin/perl
+use warnings;
+use strict ;
+use File::Copy;
 
-<pre><code>inkscape -l out.svg 95strains.pdf
+....
+
+move(&quot;rename_&quot;.$ARGV[0], $ARGV[0]);
+move($original_file, $new_file) or die &quot;The move operation failed: $!&quot;;
+copy($original_file, $new_file);
+copy($original_file, $new_file) or die &quot;The copy operation failed: $!&quot;;
 
 </code></pre>
-
-<ul>
-<li><p>color code: HEX to RGB
-<a href="https://www.webpagefx.com/web-design/hex-to-rgb/">https://www.webpagefx.com/web-design/hex-to-rgb/</a></p></li>
-
-<li><p>citaiton BibTex to APA
-<a href="http://ref.lexique.org/">http://ref.lexique.org/</a></p></li>
-
-<li><p>hot to get BibTex of a paper
-&gt; gogle scholar
-&gt; setting &ndash;&gt; Bibliography manager &ndash;&gt; show links to import citation into BibTex</p></li>
-
-<li><p>table generater in R</p></li>
-</ul>
-
-<p><a href="https://haozhu233.github.io/kableExtra/awesome_table_in_html.html">https://haozhu233.github.io/kableExtra/awesome_table_in_html.html</a></p>
 
 </article>
 
