@@ -8,7 +8,7 @@
 
 <meta name="description" content="">
 
-<title>Simple_setting_git</title>
+<title>Linux_1</title>
 <meta name="generator" content="Hugo 0.39" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
@@ -88,8 +88,8 @@
 </div>
 <div class="col-md-9 content">
 
-<h1>Simple_setting_git</h1>
-<h4>Published 04-17-2018 16:40:31</h4>
+<h1>Linux_1</h1>
+<h4>Published 08-15-2018 15:00:34</h4>
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="kendo5731"></a>
 <script>!function (d, s, id) {
@@ -102,7 +102,7 @@
     }
 }(document, 'script', 'twitter-wjs');</script>
 
-<div class="fb-share-button" data-href="https://floatgreen.github.io/post/simple_setting_git/" data-layout="button"></div>
+<div class="fb-share-button" data-href="https://floatgreen.github.io/post/linux_1/" data-layout="button"></div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -113,15 +113,67 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <article>
-    <p>Configuring Git in a new computer</p>
+    
 
-<pre><code>git config --global user.name &quot;usrname&quot;
-git config --global user.email &quot;YOUR EMAIL ADDRESS&quot;
-git config --global push.default simple
+<h3 id="command">! command</h3>
+
+<p><code>!!</code> last command</p>
+
+<p><code>!$</code> last argument of last command</p>
+
+<p><code>!n</code> the nth command
+<code>history</code>
+<code>!num</code> num  is t the number of a command from  <code>history</code>result</p>
+
+<p><code>!-n</code>倒数第n条命令</p>
+
+<h3 id="dev-null">/dev/null</h3>
+
+<blockquote>
+<p>空设备, /dev/null 是个只进不出的地方</p>
+</blockquote>
+
+<h3 id="2-1">2&gt;&amp;1</h3>
+
+<p>###系统管理： df,du,top,free,ps,kill</p>
+
+<p>###用户权限：chown,chgrp,groups</p>
+
+<h3 id="文本操作-awk-grep-sed-paste-cut-diff-wc-vi-join-uniq-head-tail-sort">文本操作：awk,grep,sed,paste,cut,diff,wc,vi,join, uniq,head, tail,sort</h3>
+
+<h3 id="文件操作-find-tree">文件操作：find, tree</h3>
+
+<p>十九题、解析hg38.tss 文件，统计每条染色体的基因个数。</p>
+
+<pre><code> cut -f2 hg38.tss| grep -o -E &quot;chr[0-9]{1,2}|chr[a-zA-Z]{1,2}&quot; | sort -n |uniq -c
 
 </code></pre>
 
-<p>remember to use the same email as in github, so that the github main page will record your activities.</p>
+<p>二十题、解析hg38.tss 文件，统计NM和NR开头的数量，了解NM和NR开头的含义。NM, mRNA. NR, ncRNA. NP, Protein</p>
+
+<h3 id="将内容写入一个文件">将内容写入一个文件</h3>
+
+<pre><code> cat &gt; test.file # input and ^C quit
+ vi test.file
+ echo -e &quot;AA\nBB\nCC&quot; &gt;test.file
+</code></pre>
+
+<h3 id="grep">grep</h3>
+
+<pre><code>grep -o -E &quot;SN:chr[0-0]+|chr[a-zA-Z]+&quot; tmp.header # -o 只取匹配部分，-n 显示行数 -E 正则
+grep -n --color  
+</code></pre>
+
+<h3 id="uniq-c">uniq -c</h3>
+
+<pre><code>samtools view tmp.rmdup.bam| cut -f2 |sort -n| uniq -c
+
+     16 0
+     12 16
+</code></pre>
+
+<pre><code>cut -d&quot; &quot; -f 4
+</code></pre>
 
 </article>
 

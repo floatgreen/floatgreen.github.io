@@ -6,10 +6,28 @@
     <description>Recent content in Develop on My Small Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Aug 2018 14:49:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 15 Aug 2018 15:00:34 -0500</lastBuildDate>
     
 	<atom:link href="https://floatgreen.github.io/tags/develop/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux_1</title>
+      <link>https://floatgreen.github.io/post/linux_1/</link>
+      <pubDate>Wed, 15 Aug 2018 15:00:34 -0500</pubDate>
+      
+      <guid>https://floatgreen.github.io/post/linux_1/</guid>
+      <description>! command !! last command
+!$ last argument of last command
+!n the nth command history !num num is t the number of a command from historyresult
+!-n倒数第n条命令
+/dev/null  空设备, /dev/null 是个只进不出的地方
+ 2&amp;gt;&amp;amp;1 ###系统管理： df,du,top,free,ps,kill
+###用户权限：chown,chgrp,groups
+文本操作：awk,grep,sed,paste,cut,diff,wc,vi,join, uniq,head, tail,sort 文件操作：find, tree 十九题、解析hg38.tss 文件，统计每条染色体的基因个数。
+ cut -f2 hg38.tss| grep -o -E &amp;quot;chr[0-9]{1,2}|chr[a-zA-Z]{1,2}&amp;quot; | sort -n |uniq -c  二十题、解析hg38.tss 文件，统计NM和NR开头的数量，了解NM和NR开头的含义。NM, mRNA. NR, ncRNA. NP, Protein
+将内容写入一个文件  cat &amp;gt; test.</description>
+    </item>
     
     <item>
       <title>Perl_mv_rename_file</title>

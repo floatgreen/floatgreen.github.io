@@ -27,6 +27,8 @@
         <h3 data-open="last-posts">My Small Hugo Site - Most recent posts</h3>
         <ul>
             
+            <li><a href="https://floatgreen.github.io/post/linux_1/">Linux_1</a></li>
+            
             <li><a href="https://floatgreen.github.io/post/perl_mv_rename_file/">Perl_mv_rename_file</a></li>
             
             <li><a href="https://floatgreen.github.io/post/read_table_linux/">read_table_linux</a></li>
@@ -141,6 +143,20 @@ while IFS=$'\t' read -r gene old_locus	new_locus contig start end strand do efet
     <article>
         <h3><a href="https://floatgreen.github.io/post/perl_mv_rename_file/">Perl_mv_rename_file</a> - 2018-08-13 14:49:00</h3>
         #!/usr/bin/perl use warnings; use strict ; use File::Copy; .... move(&quot;rename_&quot;.$ARGV[0], $ARGV[0]); move($original_file, $new_file) or die &quot;The move operation failed: $!&quot;; copy($original_file, $new_file); copy($original_file, $new_file) or die &quot;The copy operation failed: $!&quot;;  
+    </article>
+    
+    <article>
+        <h3><a href="https://floatgreen.github.io/post/linux_1/">Linux_1</a> - 2018-08-15 15:00:34</h3>
+        ! command !! last command
+!$ last argument of last command
+!n the nth command history !num num is t the number of a command from historyresult
+!-n倒数第n条命令
+/dev/null  空设备, /dev/null 是个只进不出的地方
+ 2&gt;&amp;1 ###系统管理： df,du,top,free,ps,kill
+###用户权限：chown,chgrp,groups
+文本操作：awk,grep,sed,paste,cut,diff,wc,vi,join, uniq,head, tail,sort 文件操作：find, tree 十九题、解析hg38.tss 文件，统计每条染色体的基因个数。
+ cut -f2 hg38.tss| grep -o -E &quot;chr[0-9]{1,2}|chr[a-zA-Z]{1,2}&quot; | sort -n |uniq -c  二十题、解析hg38.tss 文件，统计NM和NR开头的数量，了解NM和NR开头的含义。NM, mRNA. NR, ncRNA. NP, Protein
+将内容写入一个文件  cat &gt; test.
     </article>
     
 </div>
